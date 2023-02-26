@@ -16,7 +16,7 @@ function talk() {
         openai.createCompletion({
             model: "text-davinci-003",
             prompt: result.input,
-            max_tokens: 100,
+            max_tokens: 1500,
         }).then((completion) => {
             // Log the completion
             console.log(completion.data.choices[0].text);
